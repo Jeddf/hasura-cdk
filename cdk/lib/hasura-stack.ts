@@ -35,7 +35,6 @@ export class HasuraStack extends Stack {
             databaseName: hasuraDatabaseName,
             engine: DatabaseInstanceEngine.POSTGRES,
             instanceType: InstanceType.of(InstanceClass.BURSTABLE3, InstanceSize.MICRO),
-            masterUsername: 'syscdk',
             storageEncrypted: true,
             allocatedStorage: 20,
             maxAllocatedStorage: 100,
