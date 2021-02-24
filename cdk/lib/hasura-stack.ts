@@ -97,7 +97,7 @@ export class HasuraStack extends Stack {
             cpu: 256,
             desiredCount: props.multiAz ? 2 : 1,
             taskImageOptions: {
-                image: ContainerImage.fromRegistry('hasura/graphql-engine:v1.2.1'),
+                image: ContainerImage.fromRegistry('hasura/graphql-engine:v1.3.3'),
                 containerPort: 8080,
                 enableLogging: true,
                 environment: {
